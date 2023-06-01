@@ -23,7 +23,7 @@ tm-page(:title="`Block ${block.header.height}${hasNextBlock ? '' : ' (the latest
   tm-part(title='Block Header')
     tm-list-item(dt="Chain ID" :dd="block.header.chain_id")
     tm-list-item(dt="Time" :dd="block.header.time")
-    tm-list-item(dt="Transactions" :dd="block.header.num_txs")
+    tm-list-item(dt="Transactions" :dd="block.data.txs.length")
     tm-list-item(dt="Last Commit Hash" :dd="block.header.last_commit_hash")
     tm-list-item(dt="Validators Hash" :dd="block.header.validators_hash")
     tm-list-item(dt="App Hash" :dd="block.header.app_hash")

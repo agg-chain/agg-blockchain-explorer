@@ -9,7 +9,7 @@ tm-page(title='Search')
             placeholder="Search for block"
             required
             v-model="query"
-            pattern=".{1,60}"
+            pattern=".{1,64}"
             title="1 to 60 characters")
           tm-btn(type="submit" icon="search" value="Go")
 
